@@ -5,13 +5,23 @@
 
 #Titulo {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   
-    width: 100%;
-    
-    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #23232e;
+    height: 8vh;
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
 
 .fundo {
     width: 100%;
@@ -24,17 +34,19 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-.calculadora{
+
+.calculadora {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 15px;
     padding: 15px;
     font-family: 'Poppins', sans-serif;
 }
-.botao{
+
+.botao {
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -45,11 +57,13 @@
     margin: 3px;
     font-family: 'Poppins', sans-serif;
 }
-.botao:hover{
+
+.botao:hover {
     background-color: black;
 
 }
-#resultado{
+
+#resultado {
     background-color: white;
     width: 207px;
     height: 40px;
@@ -60,18 +74,29 @@
     font-family: 'Poppins', sans-serif;
     padding: 5px;
 }
+
 @keyframes change {
-    0%{
+    0% {
         background-position: 0 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0 50%;
     }
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
 
 .nome {
     margin: 10px;
@@ -80,6 +105,7 @@
     color: black;
     text-align: center;
     animation: piscapisca 0.25s infinite;
+    letter-spacing: 3px;
 
 }
 
