@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,27 +12,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="b2">
     <header id="Titulo">
         <a class="nome" href="index2.html">Samuel Hereds</a>
         <nav>
             <ul class="nav-list">
                 <li><a href="index.html">Calculadora</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="index3.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
     <section class="content">
         <div class="slides">
-            <input type="radio" name="radio" id="radio1">
-            <input type="radio" name="radio" id="radio2">
-            <input type="radio" name="radio" id="radio3">
-            <input type="radio" name="radio" id="radio.4">
-            <input type="radio" name="radio" id="radio5">
+            <input type="radio" name="slide" id="slide1" checked> 
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            <div class="slide s1"><img src="./assets/images/1.jpg" alt="image1"></div>
+            <div class="slide"><img src="./assets/images/2.jpg" alt="image2"></div>
+            <div class="slide"><img src="./assets/images/3.jpg" alt="image3"></div>
+            <div class="slide"><img src="./assets/images/4.jpg" alt="image4"></div>
+            <div class="slide"><img src="./assets/images/5.jpg" alt="image5"></div>
 
+
+        </div>
+
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
 
         </div>
 
     </section>
 </body>
+
 </html>
