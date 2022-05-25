@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Calculadora</title>
     <script type="text/javascript" src="codigo.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,42 +13,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 
-<body class="b2">
+<body>
+
     <header id="Titulo">
-        <a class="nome" href="index2.html">Samuel Hereds</a>
+        <a class="nome" href="index.html">Samuel Hereds</a>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.html">Calculadora</a></li>
+                <li><a href="index2.html">Calculadora</a></li>
                 <li><a href="index3.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
-    <section class="content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked> 
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-            <div class="slide s1"><img src="./assets/images/1.jpg" alt="image1"></div>
-            <div class="slide"><img src="./assets/images/2.jpg" alt="image2"></div>
-            <div class="slide"><img src="./assets/images/3.jpg" alt="image3"></div>
-            <div class="slide"><img src="./assets/images/4.jpg" alt="image4"></div>
-            <div class="slide"><img src="./assets/images/5.jpg" alt="image5"></div>
+    <main></main>
+    <section>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()">&lt</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7 </button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 103px" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 103px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                
+                </tr>
 
+            </table>
 
         </div>
 
-        <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
-
-        </div>
-
-    </section>
+    </div>
+</section>
 </body>
 
 </html>
