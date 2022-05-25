@@ -218,3 +218,13 @@ input {
 #slide5:checked~.s1 {
     margin-left: -80%;
 }
+.dados{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: flex;
+    align-text: center;
+    color: #fff;
+     height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
+}
